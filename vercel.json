@@ -24,8 +24,8 @@
     "APP_ROUTES_CACHE": "/tmp/routes.php",
     "VIEW_COMPILED_PATH": "/tmp/views",
     "SESSION_DRIVER": "cookie",
-    "CACHE_STORE": "database",
-    "QUEUE_CONNECTION": "database",
+    "CACHE_STORE": "file",
+    "QUEUE_CONNECTION": "sync",
     "LOG_CHANNEL": "stderr"
   }
 }
