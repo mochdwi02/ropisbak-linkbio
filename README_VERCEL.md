@@ -95,3 +95,13 @@ php artisan db:seed --force
 - Session production diset ke `cookie` agar ringan dan cocok untuk kebutuhan admin sederhana.
 - Klik link dan visit tetap tersimpan ke tabel MySQL.
 - Asset gambar dan Sneat dibaca langsung dari folder `public/`.
+
+## Fix included in this final zip
+- Added `config/view.php` to resolve Laravel view binding on Vercel.
+- Changed `CACHE_STORE` to `file` and `QUEUE_CONNECTION` to `sync` in `vercel.json`.
+- Updated `.env.example` with safer Vercel defaults.
+
+## Important for Vercel
+- If `vercel.json` is in the root of your GitHub repo, leave **Root Directory** empty.
+- Do **not** set Root Directory to `/`.
+- After changing Environment Variables, always redeploy.
